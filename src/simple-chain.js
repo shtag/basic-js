@@ -15,7 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     return this
   },
   removeLink(position) {
-    if(position > this.chain.length || typeof position != 'number' || Math.floor(position) != position){
+    if(position > this.chain.length -1 || typeof position != 'number' || Math.floor(position) != position){
       throw 'You can\'t remove incorrect link!'
     } else {
       position--;
